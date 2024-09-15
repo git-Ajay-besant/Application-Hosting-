@@ -1,1 +1,3 @@
 yum install httpd -y
+systemctl start httpd
+yum install -y amazon-efs-utils

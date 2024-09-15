@@ -1,3 +1,6 @@
 yum install httpd -y
 systemctl start httpd
 yum install -y amazon-efs-utils
+mount -t efs fs-005b72d6f900699ca:/ /var/www/html
+touch /var/www/html/facebook
+echo "source code" > /var/www/html/facebook
